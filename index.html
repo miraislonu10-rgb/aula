@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Horario 3IM6 – PRO</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f8f5f2;
+        margin: 0;
+        padding: 20px;
+        color: #333;
+    }
+.header-ipn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .logo-ipn, .logo-cecyt {
+        width: 100px;
+        height: auto;
+    }
+
+
+    h1, h2, h3 {
+        color: #5a0035; /* Vino IPN */
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .card {
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        margin-bottom: 20px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 10px;
+    }
+
+    th {
+        background: #5a0035;
+        color: white;
+        padding: 10px;
+    }
+
+    td {
+        padding: 8px;
+        border: 1px solid #ccc;
+    }
+
+    .sub {
+        background: #f0e6ea;
+        font-size: 12px;
+        font-weight: bold;
+        color: #5a0035;
+    }
+
+    /* Diseño responsivo */
+    @media screen and (max-width: 700px) {
+        table {
+            font-size: 12px;
+        }
+        td, th {
+            padding: 5px;
+        }
+    }
+
+    /* ---------- CREDENCIAL ---------- */
+    .credencial {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+
+    .credencial-card {
+        width: 100%;
+        max-width: 450px;
+        background: white;
+        padding: 20px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        border: 3px solid #5a0035; /* color IPN */
+    }
+
+    .credencial-foto {
+        width: 120px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 2px solid #5a0035;
+        margin-bottom: 10px;
+    }
+
+    .credencial-info p {
+        margin: 4px 0;
+        font-size: 15px;
+    }
+
+    .cred-nombre {
+        margin-bottom: 8px;
+        font-size: 22px;
+        color: #5a0035;
+    }
+
+    .cred-qrcode {
+        margin-top: 10px;
+    }
+
+    .cred-qr {
+        width: 120px;
+    }
+</style>
+
+
+
+<body>
+    <div id="clase-actual.js" class="card" style="margin: 20px;"></div>
+    <script src="clase-actual.js"></script>
+<!-- ENCABEZADO INSTITUCIONAL -->
+<div class="header-ipn">
+
+    <img src="ipn.png" class="logo-ipn" align="left">
+    
+    <div class="header-text">
+        <h2>Instituto Politécnico Nacional</h2>
+        <h3>CECyT No. 3 “Estanislao Ramírez Ruiz”</h3>
+    </div>
+    
+    <img src="err.png" class="logo-cecyt" align="right">
+
+</div>
+
+
+<div class="credencial">
+    <div class="credencial-card">
+
+        <!-- FOTO - si no tienes foto, uso una de ejemplo -->
+        <img src="mia.jpg" alt="Foto" class="credencial-foto">
+
+        <div class="credencial-info">
+            <h2 class="cred-nombre">Mía Iraís</h2>
+            <p><strong>Boleta:</strong> 2025030589</p>
+            <p><strong>Grupo:</strong> 3IM6</p>
+            <p><strong>Turno:</strong> Matutino</p>
+        </div>
+
+        <div class="cred-qrcode">
+            <!-- QR de ejemplo para probar -->
+            <img src="qr.jpg" alt="QR" class="cred-qr">
+        </div>
+
+    </div>
+</div>
+
+
+<h1>Horario – Grupo 3IM6</h1>
+<h3>Turno: Matutino</h3>
+
+<div class="card">
+
+<h2>Clases por Día</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>HORA</th>
+      <th>LUN</th>
+      <th>MAR</th>
+      <th>MIÉ</th>
+      <th>JUE</th>
+      <th>VIE</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <tr><td>7 - 8</td><td>A</td><td>E</td><td>A</td><td>G</td><td>F</td></tr>
+    <tr class="sub"><td>SALÓN</td><td>LAB I QUM</td><td>A-13</td><td>LAB FIS</td><td>LAB CAD</td><td>DIB REST II</td></tr>
+
+    <tr><td>8 - 9</td><td>A</td><td>E</td><td>C</td><td>F</td><td>B</td></tr>
+    <tr class="sub"><td>SALÓN</td><td>LAB I QUM</td><td>A-13</td><td>LAB I FIS</td><td>LAB CAD</td><td>DIB REST II</td></tr>
+
+    <tr><td>9 - 10</td><td>J</td><td>L</td><td>C</td><td>J</td><td>B</td></tr>
+    <tr class="sub"><td>SALÓN</td><td>A-13</td><td>LAB PROG 1</td><td>LAB I FIS</td><td>A-13</td><td>A-13</td></tr>
+
+    <tr><td>10 - 11</td><td>A</td><td>L</td><td>H</td><td>J</td><td>N</td></tr>
+    <tr class="sub"><td>SALÓN</td><td>A-13</td><td>LAB PROG 2</td><td>A-13</td><td>A-13</td><td>A-13</td></tr>
+
+    <tr><td>11 - 12</td><td>A</td><td>A</td><td>A</td><td>A</td><td>B</td></tr>
+    <tr class="sub"><td>SALÓN</td><td>A-13</td><td>A-13</td><td>A-13</td><td>A-13</td><td>A-13</td></tr>
+
+    <tr><td>12 - 13</td><td>L</td><td>M</td><td>M</td><td>L</td><td>P</td></tr>
+    <tr class="sub"><td>SALÓN</td><td>LAB PROG 1</td><td>A-13</td><td>A-13</td><td>LAB PROG 1</td><td>A-13</td></tr>
+
+    <tr><td>13 - 14</td><td>L</td><td>K</td><td>K</td><td>B</td><td>N</td></tr>
+    <tr class="sub"><td>SALÓN</td><td>LAB PROG 1</td><td>A-13</td><td>A-13</td><td>A-13</td><td>A-13</td></tr>
+
+    <tr><td>14 - 15</td><td>K</td><td>K</td><td>K</td><td>B</td><td>B</td></tr>
+    <tr class="sub"><td>SALÓN</td><td>A-13</td><td>A-13</td><td>A-13</td><td>A-13</td><td>A-13</td></tr>
+
+  </tbody>
+</table>
+
+</div>
+
+
+<div class="card">
+<h2>Unidades de Aprendizaje y Profesores</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Clave</th>
+      <th>Materia</th>
+      <th>Profesor(a)</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr><td>A</td><td>Geometría Analítica</td><td>César Prieto Macías</td></tr>
+    <tr><td>B</td><td>Física</td><td>Jorge Esteves Flores</td></tr>
+    <tr><td>C</td><td>Física I Lab.</td><td>Jorge Esteves Flores / María Jena Martínez Pérez</td></tr>
+    <tr><td>D</td><td>Química</td><td>María Erika Olmedo Cruz</td></tr>
+    <tr><td>E</td><td>Química Lab.</td><td>María Erika Olmedo Cruz / Alejandro J. Arroyo Vargas</td></tr>
+    <tr><td>F</td><td>Dibujo Técnico Restauradores</td><td>Gabriel Mier Ordóñez</td></tr>
+    <tr><td>G</td><td>Dibujo Técnico CAD</td><td>Gabriel Mier Ordóñez</td></tr>
+    <tr><td>H</td><td>Inglés III</td><td>Lucía Pérez Perea</td></tr>
+    <tr><td>I</td><td>Inglés III Lab.</td><td>Ma. Elizabeth Ruvalcaba Zamora</td></tr>
+    <tr><td>J</td><td>Comunicación Científica</td><td>Bárbara Yadira Terán Chávez</td></tr>
+    <tr><td>K</td><td>Entorno Socioeconómico de México</td><td>Saúl Rojas Tentle</td></tr>
+    <tr><td>L</td><td>Algoritmia y Programación</td><td>Xóchitl Minerva García Cruz</td></tr>
+    <tr><td>M</td><td>Lab Algoritmia y Programación</td><td>Xóchitl Minerva García Cruz</td></tr>
+    <tr><td>N</td><td>Ensamblado y Soporte de Componentes Electrónicos</td><td>Gilberto González Rodríguez</td></tr>
+    <tr><td>Ñ</td><td>Lab Ensamblado y Soporte de Componentes Electrónicos</td><td>Gilberto González Rodríguez</td></tr>
+    <tr><td>O</td><td>Integración de Recursos Multimedia</td><td>Esteban Ayala Peña</td></tr>
+    <tr><td>P</td><td>Lab Integración de Recursos Multimedia</td><td>Esteban Ayala Peña</td></tr>
+
+  </tbody>
+</table>
+</div>
+
+</body>
+</html>
